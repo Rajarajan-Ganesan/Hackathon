@@ -1,0 +1,24 @@
+<Entities>
+	<ExtensionPackages>
+		<ExtensionPackage name="DynamicHelper_Extension"
+						  description="Dynamic Helper Extension. Sample extension."
+						  vendor="ThingWorx Customer Service"
+						  packageVersion="1.0" 
+						  minimumThingWorxVersion="5.0.0" >
+			<JarResources>
+				<FileResource type="JAR" file="thingworx-dynamichelper-extension.jar" description="Dynamic Helper ThingPackage JAR" />
+				<FileResource type="JAR" file="guava-10.0.1.jar" description="Dynamic Helper ThingPackage JAR" />
+				<FileResource type="JAR" file="jsoup-1.9.2.jar" description="Dynamic Helper ThingPackage JAR" />
+				<FileResource type="JAR" file="gson-2.2.4.jar" description="Dynamic Helper ThingPackage JAR" />
+			</JarResources>
+		</ExtensionPackage>
+	</ExtensionPackages>
+	<ThingPackages>
+		<ThingPackage name="DynamicHelperThing" description="Sample Extension" className="com.hackathon.things.dynamichelper.DynamicHelperThing" aspect.isSystemObject="false" aspect.isCreatable="true" />
+	</ThingPackages>
+	<ThingTemplates>
+		<ThingTemplate name="DynamicHelper" description="Dynamic Helper Template" thingPackage="DynamicHelperThing" aspect.isSystemObject="false">
+			<avatar/>
+		</ThingTemplate>
+	</ThingTemplates>
+</Entities>
